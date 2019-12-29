@@ -18,11 +18,11 @@ For each member $j$:
 For each member $j$:
 
 - For each ordered subset of features $S$ excluding feature $i$,
-calculate the change in model score $m_{ijS_0}$ by adding feature $i$ with data value $0$ to $S$ 
+calculate the change in model score $m_{ijS,0}$ by adding feature $i$ with data value $0$ to $S$ 
 
-- calculate the change in model score $m_{ijS_1}$ by adding feature $i$ with data value $1$ to $S$ 
+- calculate the change in model score $m_{ijS,1}$ by adding feature $i$ with data value $1$ to $S$ 
 
-- calculate the impact value $m_{ijS} == m_{ijS_1} - m_{ijS_0}$
+- calculate the impact value $m_{ijS} == m_{ijS,1} - m_{ijS,0}$
 
 - Take weighted average of $m_{ijS}$ over all $S$ (weighting based on some kernel, in practice this is sampled etc) ==> result is $CausalShapImpact_{ij}$ (impact of toggling feature $i$ to member $j$)
 
