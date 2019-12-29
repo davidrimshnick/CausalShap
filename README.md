@@ -11,7 +11,7 @@ For each member $j$:
 
  - Take weighted average of $m_{ijS}$ over all $S$ (weighting based on some kernel, in practice this is sampled etc) ==> result is $Shap_{ij}$  (value of feature $i$ to member $j$)
  
-- Average $m_{ij}$ over all $j$ to get $m_i$, which is average shap value of feature $i$ over members, 
+- Average $m_{ij}$ over all $j$ to get $m_i$, which is average shap value of feature $i$ over members, $Shap_i$
  
 
 **CausalSHAP™**
