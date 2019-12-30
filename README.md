@@ -2,6 +2,10 @@
 
 Modification to SHAP (CausalSHAP™) that could give us member-level impact scores:
 
+Basically, as opposed to averaging the change in model score of adding a feature F to the model with the value it has in the data, instead average the difference in adding as 1 as opposed to adding as 0 (assuming a binary treatment variable).
+
+More detail:
+
 Assuming binary feature $i$:
  
 **Current SHAP (simplified) with current impact methodology**
